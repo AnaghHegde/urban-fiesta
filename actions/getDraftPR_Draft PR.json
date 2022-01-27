@@ -16,6 +16,7 @@
     "pageId": "Draft PR",
     "collectionId": "Draft PR_JSObject1",
     "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n\t\t//do async stuff here or use JS promises\n\t\treturn getPullRequest.data.filter( (pullRequest) => {\n\t\t\tif(pullRequest.draft == true) {\n\t\t\t\treturn pullRequest;\n\t\t\t}\n\t\t})\n\t}",
@@ -54,6 +55,7 @@
     "pageId": "Draft PR",
     "collectionId": "Draft PR_JSObject1",
     "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n\t\t//do async stuff here or use JS promises\n\t\treturn getPullRequest.data.filter( (pullRequest) => {\n\t\t\tif(pullRequest.draft == true) {\n\t\t\t\treturn pullRequest;\n\t\t\t}\n\t\t})\n\t}",
