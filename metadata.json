@@ -8,42 +8,6 @@
     {
       "unpublishedCollection": {
         "name": "JSObject1",
-        "pageId": "Home",
-        "pluginId": "js-plugin",
-        "pluginType": "JS",
-        "actionIds": [],
-        "defaultToBranchedArchivedActionIdsMap": {},
-        "archivedActionIds": [],
-        "actions": [],
-        "archivedActions": [],
-        "body": "export default {\n\tgetComments: () => {\n\t\t//write code here\n\t}\n}",
-        "variables": []
-      },
-      "publishedCollection": {
-        "name": "JSObject1",
-        "pageId": "Home",
-        "pluginId": "js-plugin",
-        "pluginType": "JS",
-        "actionIds": [],
-        "defaultToBranchedArchivedActionIdsMap": {},
-        "archivedActionIds": [],
-        "actions": [],
-        "archivedActions": [],
-        "body": "export default {\n\tgetComments: () => {\n\t\t//write code here\n\t}\n}",
-        "variables": []
-      },
-      "id": "Home_JSObject1",
-      "deleted": false,
-      "userPermissions": [
-        "read:actions",
-        "execute:actions",
-        "manage:actions"
-      ],
-      "gitSyncId": "61f17dd79d6d6a6720c95e79_61f18e199d6d6a6720c95f7a"
-    },
-    {
-      "unpublishedCollection": {
-        "name": "JSObject1",
         "pageId": "Draft PR",
         "pluginId": "js-plugin",
         "pluginType": "JS",
