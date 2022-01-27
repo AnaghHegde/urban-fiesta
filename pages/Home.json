@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 813,
+          "rightColumn": 976,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -1211,7 +1211,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 813,
+          "rightColumn": 976,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
