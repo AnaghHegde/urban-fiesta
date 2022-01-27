@@ -9,7 +9,7 @@
     "archivedActionIds": [],
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\n\tgetDraftPR: () => {\n\t\t//do async stuff here or use JS promises\n\t\treturn getPullRequest.data.filter( (pullRequest) => {\n\t\t\tif(pullRequest.draft == true) {\n\t\t\t\treturn pullRequest;\n\t\t\t}\n\t\t})\n\t}\n}",
+    "body": "export default {\n\tgetComments: () => {\n\t\t//write code here\n\t}\n}",
     "variables": []
   },
   "publishedCollection": {
@@ -22,7 +22,7 @@
     "archivedActionIds": [],
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\n\tgetDraftPR: () => {\n\t\t//do async stuff here or use JS promises\n\t\treturn getPullRequest.data.filter( (pullRequest) => {\n\t\t\tif(pullRequest.draft == true) {\n\t\t\t\treturn pullRequest;\n\t\t\t}\n\t\t})\n\t}\n}",
+    "body": "export default {\n\tgetComments: () => {\n\t\t//write code here\n\t}\n}",
     "variables": []
   },
   "id": "Draft PR_JSObject1",
@@ -32,5 +32,5 @@
     "execute:actions",
     "manage:actions"
   ],
-  "gitSyncId": "61f2d47d5090aa7077cb8837_61f2d4db5090aa7077cb8850"
+  "gitSyncId": "61f17dd79d6d6a6720c95e79_61f18e199d6d6a6720c95f7a"
 }

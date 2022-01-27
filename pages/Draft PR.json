@@ -821,7 +821,7 @@
               "textSize": "PARAGRAPH",
               "widgetId": "h1xqtg9xaw",
               "isVisibleFilters": true,
-              "tableData": "{{JSObject1.getDraftPR()}}",
+              "tableData": "{{JSObject1}}",
               "isVisible": true,
               "label": "Data",
               "searchKey": "",
@@ -845,17 +845,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Draft PR_getPullRequest",
-              "name": "getPullRequest",
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "widgetNames": [
           "MainContainer",
           "Table1"
@@ -1693,7 +1683,7 @@
               "textSize": "PARAGRAPH",
               "widgetId": "h1xqtg9xaw",
               "isVisibleFilters": true,
-              "tableData": "{{JSObject1.getDraftPR()}}",
+              "tableData": "{{JSObject1}}",
               "isVisible": true,
               "label": "Data",
               "searchKey": "",
@@ -1717,17 +1707,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Draft PR_getPullRequest",
-              "name": "getPullRequest",
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "widgetNames": [
           "MainContainer",
           "Table1"
