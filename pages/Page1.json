@@ -1,0 +1,727 @@
+{
+  "unpublishedPage": {
+    "name": "Page1",
+    "slug": "page1",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1712,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1240,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 50,
+          "minHeight": 1250,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table2",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "revenue",
+                "imdb_id",
+                "release_date",
+                "genres",
+                "vote_average",
+                "tagline",
+                "_id",
+                "title",
+                "vote_count",
+                "poster_path",
+                "homepage",
+                "status"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 2,
+              "bottomRow": 26,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.revenue.computedValue"
+                },
+                {
+                  "key": "primaryColumns.imdb_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.release_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.genres.computedValue"
+                },
+                {
+                  "key": "primaryColumns.vote_average.computedValue"
+                },
+                {
+                  "key": "primaryColumns.tagline.computedValue"
+                },
+                {
+                  "key": "primaryColumns._id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.title.computedValue"
+                },
+                {
+                  "key": "primaryColumns.vote_count.computedValue"
+                },
+                {
+                  "key": "primaryColumns.poster_path.computedValue"
+                },
+                {
+                  "key": "primaryColumns.homepage.computedValue"
+                },
+                {
+                  "key": "isVisibleFilters"
+                }
+              ],
+              "leftColumn": 4,
+              "primaryColumns": {
+                "appsmith_mongo_escape_id": {
+                  "index": 6,
+                  "width": 150,
+                  "id": "_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "_id",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow._id))}}"
+                },
+                "revenue": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "revenue",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "revenue",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.revenue))}}"
+                },
+                "imdb_id": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "imdb_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "imdb_id",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.imdb_id))}}"
+                },
+                "release_date": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "release_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "release_date",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.release_date))}}"
+                },
+                "genres": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "genres",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "genres",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.genres))}}"
+                },
+                "vote_average": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "vote_average",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "vote_average",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.vote_average))}}"
+                },
+                "tagline": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "tagline",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "tagline",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.tagline))}}"
+                },
+                "title": {
+                  "index": 7,
+                  "width": 150,
+                  "id": "title",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "title",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.title))}}"
+                },
+                "vote_count": {
+                  "index": 8,
+                  "width": 150,
+                  "id": "vote_count",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "vote_count",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.vote_count))}}"
+                },
+                "poster_path": {
+                  "index": 9,
+                  "width": 150,
+                  "id": "poster_path",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "poster_path",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.poster_path))}}"
+                },
+                "status": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "status",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
+                  "buttonColor": "#03B365",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF"
+                },
+                "homepage": {
+                  "index": 10,
+                  "width": 150,
+                  "id": "homepage",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "homepage",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.homepage))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "b0bgpboivg",
+              "derivedColumns": {},
+              "rightColumn": 55,
+              "textSize": "PARAGRAPH",
+              "widgetId": "tb9l7g1kgo",
+              "isVisibleFilters": false,
+              "tableData": "{{mvoiesMockObject.transformAPI()}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "name": "moviesMock",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Page1",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "deletedAt": {
+      "seconds": 1643216378,
+      "nanos": 0
+    }
+  },
+  "publishedPage": {
+    "name": "Page1",
+    "slug": "page1",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1712,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1240,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 50,
+          "minHeight": 1250,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table2",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "revenue",
+                "imdb_id",
+                "release_date",
+                "genres",
+                "vote_average",
+                "tagline",
+                "_id",
+                "title",
+                "vote_count",
+                "poster_path",
+                "homepage",
+                "status"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 2,
+              "bottomRow": 26,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.revenue.computedValue"
+                },
+                {
+                  "key": "primaryColumns.imdb_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.release_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.genres.computedValue"
+                },
+                {
+                  "key": "primaryColumns.vote_average.computedValue"
+                },
+                {
+                  "key": "primaryColumns.tagline.computedValue"
+                },
+                {
+                  "key": "primaryColumns._id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.title.computedValue"
+                },
+                {
+                  "key": "primaryColumns.vote_count.computedValue"
+                },
+                {
+                  "key": "primaryColumns.poster_path.computedValue"
+                },
+                {
+                  "key": "primaryColumns.homepage.computedValue"
+                },
+                {
+                  "key": "isVisibleFilters"
+                }
+              ],
+              "leftColumn": 4,
+              "primaryColumns": {
+                "appsmith_mongo_escape_id": {
+                  "index": 6,
+                  "width": 150,
+                  "id": "_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "_id",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow._id))}}"
+                },
+                "revenue": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "revenue",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "revenue",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.revenue))}}"
+                },
+                "imdb_id": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "imdb_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "imdb_id",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.imdb_id))}}"
+                },
+                "release_date": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "release_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "release_date",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.release_date))}}"
+                },
+                "genres": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "genres",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "genres",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.genres))}}"
+                },
+                "vote_average": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "vote_average",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "vote_average",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.vote_average))}}"
+                },
+                "tagline": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "tagline",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "tagline",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.tagline))}}"
+                },
+                "title": {
+                  "index": 7,
+                  "width": 150,
+                  "id": "title",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "title",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.title))}}"
+                },
+                "vote_count": {
+                  "index": 8,
+                  "width": 150,
+                  "id": "vote_count",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "vote_count",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.vote_count))}}"
+                },
+                "poster_path": {
+                  "index": 9,
+                  "width": 150,
+                  "id": "poster_path",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "poster_path",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.poster_path))}}"
+                },
+                "status": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "status",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
+                  "buttonColor": "#03B365",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF"
+                },
+                "homepage": {
+                  "index": 10,
+                  "width": 150,
+                  "id": "homepage",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "homepage",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.homepage))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "b0bgpboivg",
+              "derivedColumns": {},
+              "rightColumn": 55,
+              "textSize": "PARAGRAPH",
+              "widgetId": "tb9l7g1kgo",
+              "isVisibleFilters": false,
+              "tableData": "{{mvoiesMockObject.transformAPI()}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "name": "moviesMock",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Page1",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "deletedAt": {
+      "seconds": 1643216378,
+      "nanos": 0
+    }
+  },
+  "deleted": false,
+  "policies": [],
+  "userPermissions": [
+    "read:pages",
+    "manage:pages"
+  ],
+  "gitSyncId": "61f191079d6d6a6720c95fa3_61f191079d6d6a6720c95fab"
+}
